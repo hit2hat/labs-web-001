@@ -14,45 +14,57 @@
 
         <h3>Форма 2</h3>
         <form>
-            <input type="number" placeholder="Число" />
-            <p>
+            <label>
+                <input type="number" placeholder="Число" />
+            </label>
+            <br />
+            <label>
                 <input type="checkbox" />
                 <span>Согласны с пользовательским соглашением</span>
-            </p>
+            </label>
+            <br />
             <input type="submit" value="Ок!" />
         </form>
 
         <h3>Регистрация</h3>
         <form>
             <p>
-                <span>Пол: </span>
-                <input name="sex" type="radio" required />
-                <span>Мужской</span>
-                <input name="sex" type="radio" required />
-                <span>Женский</span>
-                <input name="sex" type="radio" required />
-                <span>Паркетный</span>
+                Пол:
+                <label>
+                    <input name="sex" type="radio" required />
+                    <span>Мужской</span>
+                </label>
+                <label>
+                    <input name="sex" type="radio" required />
+                    <span>Женский</span>
+                </label>
+                <label>
+                    <input name="sex" type="radio" required />
+                    <span>Паркетный</span>
+                </label>
             </p>
-            <p>Фамилия: <input type="text" required minlength="3" /></p>
-            <p>Имя: <input type="text" required minlength="3" /></p>
-            <p>Отчество: <input type="text" minlength="3" /></p>
-            <p>Возраст: <input type="number" required /></p>
-            <p>Телефон: <input type="tel" placeholder="+7 (9хх) ххх-хх-хх" required /></p>
-            <p>E-mail: <input type="email" placeholder="example@test.com" required /></p>
-            <p>
+            <label>Фамилия: <input type="text" required minlength="3" /></label><br />
+            <label>Имя: <input type="text" required minlength="3" /></label><br />
+            <label>Отчество: <input type="text" minlength="3" /></label><br />
+            <label>Возраст: <input type="number" required /></label><br />
+            <label>Телефон: <input type="tel" placeholder="+7 (9хх) ххх-хх-хх" required /></label><br />
+            <label>E-mail: <input type="email" placeholder="example@test.com" required /></label><br />
+            <label>
                 <span>Группа:</span>
                 <select required>
                     <option>ЭПИ-11</option>
                     <option>ЭИС-16</option>
                     <option>ЭИ-18</option>
                 </select>
-            </p>
-            <p>Пароль: <input type="password" required /></p>
-            <p>Повторите пароль: <input type="password" required /></p>
-            <p>
+            </label>
+            <br />
+            <label>Пароль: <input type="password" required /></label><br />
+            <label>Повторите пароль: <input type="password" required /></label><br />
+            <label>
                 <input type="checkbox" required />
                 <span>Учусь платно</span>
-            </p>
+            </label>
+            <br /><br />
             <input type="submit" value="Зарегистрироваться" />
         </form>
     </body>
